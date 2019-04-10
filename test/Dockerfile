@@ -4,8 +4,7 @@ LABEL maintainer="ChenJian"
 
 # Install CURL
 RUN apt-get update && \
-    apt-get -y install curl gnupg && \
-    rm -rf /var/lib/apt/lists/*;
+    apt-get -y install curl gnupg;
 
 # Get Vapor repo including Swift
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 68980A0EA10B4DE8;
@@ -13,5 +12,4 @@ RUN curl -sL https://apt.vapor.sh | bash;
 
 # Installing Swift & Vapor
 RUN apt-get update && \
-    apt-get -y install swift vapor && \
-    rm -rf /var/lib/apt/lists/*;
+    apt-get -y install swift vapor;
