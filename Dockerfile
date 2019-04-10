@@ -9,8 +9,7 @@ RUN echo "deb https://repo.vapor.codes/apt bionic main" | tee /etc/apt/sources.l
 
 # Installing Swift & Vapor
 RUN apt-get update && \
-    apt-get -y install swift vapor && \
-    rm -rf /var/lib/apt/lists/*;
+    apt-get -y install swift vapor;
 
 WORKDIR /vapor
 
