@@ -9,3 +9,4 @@ RUN apt-get update && \
 
 # Get Vapor repo including Swift
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 68980A0EA10B4DE8;
+RUN curl -sL https://apt.vapor.sh | bash;
