@@ -1,6 +1,6 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
-LABEL maintainer="zyxep"
+LABEL maintainer="ChenJian"
 
 # Install CURL
 RUN apt-get update && \
