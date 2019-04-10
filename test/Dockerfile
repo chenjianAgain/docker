@@ -10,6 +10,6 @@ RUN apt-get update && \
 RUN curl -sL https://apt.vapor.sh | bash;
 
 # Installing Swift & Vapor
-RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 68980A0EA10B4DE8;
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0E72020EB309474F;
 RUN apt-get update && \
     apt-get -y install swift vapor;
