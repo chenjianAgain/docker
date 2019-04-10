@@ -10,7 +10,7 @@ RUN echo "deb https://repo.vapor.codes/apt bionic main" | tee /etc/apt/sources.l
 
 # Installing Swift & Vapor
 RUN apt-get update && \
-    apt-get -y install swift vapor;
+    apt-get -y install libcurl4-openssl-dev swift vapor;
 
 WORKDIR /vapor
 
